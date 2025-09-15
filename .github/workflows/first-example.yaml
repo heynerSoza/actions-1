@@ -8,12 +8,15 @@ jobs:
        steps: 
           - name: Checkout Repo
             uses: actions/checkout@v5
+
+          - name: List and read file
+            run: | 
+                echo "Im the best in github actions "
+                ls -ltra
+                cat README.md
             
-          - name: Welcome Message
-            run: echo "Im the best in github actions "
+        #   - name: List files
+        #     run: ls
 
-          - name: List files
-            run: ls
-
-          - name: Read file 
-            run: cat README.md
+        #   - name: Read file 
+        #     run: cat README.md
